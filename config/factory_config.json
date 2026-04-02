@@ -1,0 +1,67 @@
+{
+  "factory": {
+    "name": "Agro Gold Mustard Oil Mills",
+    "location": "Rajshahi, Bangladesh",
+    "capacity_tpd": 5.0,
+    "expeller_lines": 3,
+    "established": 2021
+  },
+  "expellers": [
+    {
+      "id": "EXP-01",
+      "model": "Mark-V Super",
+      "type": "screw_press",
+      "max_throughput_kg_hr": 150,
+      "motor_kw": 22.0,
+      "stages": 2,
+      "installed": "2021-03-10",
+      "last_overhaul": "2024-06-15"
+    },
+    {
+      "id": "EXP-02",
+      "model": "Mark-V Super",
+      "type": "screw_press",
+      "max_throughput_kg_hr": 150,
+      "motor_kw": 22.0,
+      "stages": 2,
+      "installed": "2021-03-10",
+      "last_overhaul": "2024-08-20"
+    },
+    {
+      "id": "EXP-03",
+      "model": "Pioneer-III",
+      "type": "screw_press",
+      "max_throughput_kg_hr": 120,
+      "motor_kw": 18.5,
+      "stages": 1,
+      "installed": "2022-01-15",
+      "last_overhaul": "2025-01-10"
+    }
+  ],
+  "quality_standards": {
+    "oil_ffa_max": 3.0,
+    "oil_moisture_max": 0.2,
+    "oil_peroxide_max": 10.0,
+    "oil_iodine_value_range": [94, 105],
+    "cake_oil_residual_max": 8.0,
+    "cake_moisture_max": 10.0
+  },
+  "thresholds": {
+    "bearing_temp_warning": 85,
+    "bearing_temp_critical": 95,
+    "motor_current_warning": 70,
+    "motor_current_critical": 80,
+    "yield_low_warning": 31.0,
+    "yield_critical": 28.0
+  },
+  "seed_grades": {
+    "A": {"moisture_max": 7.0, "oil_content_min": 40.0, "impurity_max": 1.0},
+    "B": {"moisture_max": 8.5, "oil_content_min": 38.0, "impurity_max": 2.0},
+    "C": {"moisture_max": 10.0, "oil_content_min": 35.0, "impurity_max": 3.5}
+  },
+  "shifts": {
+    "morning": {"start": "06:00", "end": "14:00"},
+    "afternoon": {"start": "14:00", "end": "22:00"},
+    "night": {"start": "22:00", "end": "06:00"}
+  }
+}
